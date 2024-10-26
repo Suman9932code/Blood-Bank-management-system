@@ -109,7 +109,7 @@ footer {
     background-color: red;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 #loginMessage,
@@ -143,41 +143,5 @@ footer {
     color: #333;
     line-height: 1.5;
     color: #333;
-}
-
-.hidden { display: none; }
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-button { cursor: pointer; }
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-.popup, form {
-    animation: fadeIn 0.5s ease;
-}
-
-#openRegister{
-    padding: 20px;
-}
-
-.donorForm{
-    padding: auto;
-    height: auto;
-    width: auto;
-}
-form{
-      padding: auto;
-    height: auto;
-    width: auto;
 }
 
