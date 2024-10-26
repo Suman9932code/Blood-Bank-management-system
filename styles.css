@@ -48,12 +48,12 @@ nav a:hover {
 }
 
 section {
-    line-height: 10px;
-    margin: 10px;
+    line-height: 50px;
+    margin: 5px;
     padding: 10px;
     background-color: rgba(207, 186, 186, 0.9); 
     border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     text-align: center;
     transition: transform 0.3s; 
     opacity: 0.9;
@@ -68,7 +68,7 @@ form {
     flex-direction: column;
     width: 300px;
     margin: auto;
-    line-height: 10px;
+    line-height: 2px;
 }
 
 form label,
@@ -143,5 +143,30 @@ footer {
     color: #333;
     line-height: 1.5;
     color: #333;
+}
+
+.hidden { display: none; }
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+button { cursor: pointer; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.popup, form {
+    animation: fadeIn 0.5s ease;
+}
+
+#openRegister{
+    padding: 20px;
 }
 
