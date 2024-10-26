@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Donor</title>
+    <title>Register</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <h1>Register</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="register.html">Register Donor</a>
+            <a href="register.html">Register</a>
             <a href="login.html">Login</a>
         </nav>
     </header>
 
     <section>
-        <form id="donorForm">
+        <button id="openRegister">Register</button>
+
+
+        <div id="registerPopup" class="popup hidden">
+            <h2>Select Registration Type</h2>
+            <button id="donorRegisterBtn">Donor Registration</button>
+            <button id="userRegisterBtn">User Registration</button>
+        </div>
+
+    
+        <form id="donorForm" class="hidden">
+            <h3>Donor Registration</h3>
             <label for="name">Full Name:</label>
             <input type="text" id="name" required>
-
             <label for="bloodType">Blood Type:</label>
             <select id="bloodType" required>
                 <option value="A+">A+</option>
                 <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
+            
             </select>
-
             <label for="donationDate">Last Donation Date:</label>
             <input type="date" id="donationDate" required>
-
             <label for="address">Address:</label>
             <input type="text" id="address" required>
-
             <button type="submit">Register Donor</button>
+        </form>
+
+    
+        <form id="userForm" class="hidden">
+            <h3>User Registration</h3>
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="userAddress">Address:</label>
+            <input type="text" id="userAddress" required>
+            <button type="submit">Register User</button>
         </form>
     </section>
 
@@ -51,5 +65,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
