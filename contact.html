@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register Donor</a>
+            <a href="login.html">Login</a>
+            <a href="inventory.html">Blood Inventory</a>
+            <a href="search.html">Search Blood</a>
+            <a href="payment.html">Payment</a>
+            <a href="contact.html">Contact Us</a>
+            
+        </nav>
+    </header>
+
+    <section>
+        <form id="contactForm">
+            <label for="contactName">Your Name:</label>
+            <input type="text" id="contactName" required>
+
+            <label for="contactMessage">Message:</label>
+            <textarea id="contactMessage" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="contactResponseMessage"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Blood Bank System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

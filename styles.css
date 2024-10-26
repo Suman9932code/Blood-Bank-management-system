@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url("https://png.pngtree.com/background/20230612/original/pngtree-clot-floating-in-the-air-picture-image_3177092.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #d42c2c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 1s; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #ff4d4d;
+    border-radius: 5px;
+    transform: scale(1.1) rotate(2deg);
+}
+
+section {
+    line-height: 50px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(207, 186, 186, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    transition: transform 0.3s; 
+    opacity: 0.9;
+}
+
+section:hover {
+    transform: scale(1.02); 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    line-height: 20px;
+}
+
+form label,
+form input,
+form select,
+form button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border 0.3s, background-color 0.3s; 
+}
+
+form input:focus,
+form select:focus {
+    border-color: #ff4d4d;
+    background-color: rgba(255, 77, 77, 0.1); 
+}
+
+button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #e60000;
+    transform: translateY(-2px);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#loginMessage,
+#paymentMessage,
+#contactResponseMessage {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+    animation: fadeIn 1s; 
+}
+
+#about-us {
+    background-color: #beaeae;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+#about-us h2 {
+    color: #5a4848;
+    transition: transform 0.3s; 
+}
+
+#about-us h2:hover {
+    transform: scale(1.05);
+}
+
+#about-us p {
+    color: #333;
+    line-height: 1.5;
+    color: #333;
+}
+

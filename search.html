@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Blood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Search Blood</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register Donor</a>
+            <a href="inventory.html">Blood Inventory</a>
+            <a href="search.html">Search Blood</a>
+            <a href="payment.html">Payment</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Find Blood by Type</h2>
+        <label for="searchBloodType">Blood Type:</label>
+        <select id="searchBloodType">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+        <button id="searchBtn">Search</button>
+
+        <ul id="searchResults"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Blood Bank System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
