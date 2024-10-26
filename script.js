@@ -1,52 +1,22 @@
-document.getElementById('openRegister').addEventListener('click', function () {
-    document.getElementById('registerPopup').classList.remove('hidden');
-});
-
-document.getElementById('donorRegisterBtn').addEventListener('click', function () {
-    document.getElementById('registerPopup').classList.add('hidden');
-    document.getElementById('donorForm').classList.remove('hidden');
-});
-
-document.getElementById('userRegisterBtn').addEventListener('click', function () {
-    document.getElementById('registerPopup').classList.add('hidden');
-    document.getElementById('userForm').classList.remove('hidden');
-});
-
-document.getElementById('donorForm')?.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const bloodType = document.getElementById('bloodType').value;
-    const donationDate = document.getElementById('donationDate').value;
-    const address = document.getElementById('address').value;
-    const donor = { name, bloodType, donationDate, address };
-    saveDonor(donor);
-    alert('Donor registered successfully!');
-    window.location.href = 'login.html';
-});
-
-document.getElementById('userForm')?.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const userName = document.getElementById('userName').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
-    const userAddress = document.getElementById('userAddress').value;
-    const user = { userName, phone, email, userAddress };
-    saveUser(user);
-    alert('User registered successfully!');
-    window.location.href = 'login.html';
-});
-
 const saveDonor = (donor) => {
     let donors = JSON.parse(localStorage.getItem('donors')) || [];
     donors.push(donor);
     localStorage.setItem('donors', JSON.stringify(donors));
 };
 
-const saveUser = (user) => {
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    users.push(user);
-    localStorage.setItem('users', JSON.stringify(users));
-};
+document.getElementById('donorForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const bloodType = document.getElementById('bloodType').value;
+    const donationDate = document.getElementById('donationDate').value;
+    const address = document.getElementById('address').value;
+    const donor = { name, bloodType, donationDate , address};
+    saveDonor(donor);
+
+    alert('Donor registered successfully! Redirecting to login page...');
+    window.location.href = 'login.html';
+});
 
 document.getElementById('loginForm')?.addEventListener('submit', function (e) {
     e.preventDefault();
