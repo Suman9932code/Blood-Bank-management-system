@@ -170,3 +170,9 @@ button { cursor: pointer; }
     padding: 20px;
 }
 
+.donorForm{
+    padding: auto;
+    height: auto;
+    width: auto;
+}
+
